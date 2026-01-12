@@ -1,0 +1,27 @@
+<div class="min-h-dvh grid grid-cols-[240px_1fr]">
+  <aside class="border-r border-zinc-200 p-4">
+    <div class="font-semibold mb-4">Admin</div>
+
+    <nav class="space-y-2">
+      <a
+        class="block rounded px-3 py-2 bg-zinc-100"
+        routerLink="products"
+        routerLinkActive="bg-zinc-900 text-white"
+      >
+        Products
+      </a>
+
+      <a
+        class="block rounded px-3 py-2 bg-zinc-100"
+        routerLink="orders"
+        routerLinkActive="bg-zinc-900 text-white"
+      >
+        Orders
+      </a>
+    </nav>
+  </aside>
+
+  <main class="p-6">
+    <router-outlet></router-outlet>
+  </main>
+</div>
